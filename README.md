@@ -1,9 +1,4 @@
 This is our goto-israel site project
 
 TODO: 
-instructions on working with files
-
-img
-css
-js
-font
+add instructions on working with files and folders
