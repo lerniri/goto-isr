@@ -1,4 +1,6 @@
+@import url(normalize.min.css);
 @import url(boilerplate.css);
+
 html, body {
   width: 100%;
   height: 100%; }
