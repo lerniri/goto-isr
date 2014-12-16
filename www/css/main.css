@@ -13,8 +13,7 @@ html, body {
   width: 9120px;
   height: 24000px;
   overflow: hidden;  
-  /*background: url(../img/path.png) top no-repeat;*/
-  
+  /*background: url(../img/path.png) top no-repeat;*/  
 }
 
 
@@ -26,27 +25,56 @@ html, body {
 	height:100px;
 	z-index: 1000;
 }
-  #page-header header {
-  	position: relative;
-  	top:5px;
-  	left:5%;
-  }	
-   #page-header header h1 {
-  	float:left;
-   }	 	
-   #page-header header h2,h3,h4,h5 {
-  	position:absolute;
-  	left:20%;
-   }
-   #page-header header h3 {
-   		top:-45px;
-   }
-   #page-header header h4 {
-   		left:35%;
-   }
-   #page-header header h5 {
-   		top:25px;
-   }
+  
+#page-header header {
+  position: relative;
+  top:5px;
+  left:5%;
+}	
+    
+#page-header header div {
+  float:left;
+}
+
+.nav,
+.settings {
+  margin-top: 8px;
+}
+
+
+.nav ul {
+  list-style-type: none;
+}
+      
+
+.nav ul li { 
+   display: inline-block;
+}  
+
+.nav a {
+  text-decoration: none;
+  font-size: .7em;
+  padding:7px;
+  color:white;
+  background-color: black;
+}    
+
+.nav a:hover {
+  
+  color:black;
+  background-color: white;
+  border: 1px solid grey;
+}
+
+
+.settings button.show-path-btn {
+  color:black;
+  font-size: .8em;
+  margin-top: 20px;
+  margin-left: 20px;
+  width:150px;
+  display: block;
+}
 
 /*# sourceMappingURL=main.css.mgap */
 
@@ -58,12 +86,10 @@ html, body {
 }
  .page-item {
  	position: absolute;
- 	max-width:800px;
- }
-
+ 	max-width:800px; 
+}
 
  /*page item positioning*/
-
 #isr-about {
 	top:600px;
 	left:750px;
