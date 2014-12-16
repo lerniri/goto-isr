@@ -3,17 +3,91 @@
 
 html, body {
   width: 100%;
-  height: 100%; }
+  height: 100%; 
+  overflow: hidden; 
+}
+
+
 
 #page-wrapper {
   width: 9120px;
-  height: 24000px; 
+  height: 24000px;
+  overflow: hidden;  
   /*background: url(../img/path.png) top no-repeat;*/
   
 }
 
+
+/* 					PAGE HEADER
+=============================================================*/
 #page-header {
 	position: fixed;
+	width:100%;
+	height:100px;
+	z-index: 1000;
 }
+  #page-header header {
+  	position: relative;
+  	top:5px;
+  	left:5%;
+  }	
+   #page-header header h1 {
+  	float:left;
+   }	 	
+   #page-header header h2,h3,h4,h5 {
+  	position:absolute;
+  	left:20%;
+   }
+   #page-header header h3 {
+   		top:-45px;
+   }
+   #page-header header h4 {
+   		left:35%;
+   }
+   #page-header header h5 {
+   		top:25px;
+   }
 
 /*# sourceMappingURL=main.css.mgap */
+
+
+/* 					CONTENT WRAPPER
+=============================================================*/
+#content-wrapper {
+	position: relative;
+}
+ .page-item {
+ 	position: absolute;
+ 	max-width:800px;
+ }
+
+
+ /*page item positioning*/
+
+#isr-about {
+	top:600px;
+	left:750px;
+}
+
+#isr-imm {
+	top:1600px;
+	left:2000px;
+}
+
+#blogs {
+	left:2800px;
+	top: 2800px;
+}
+
+#forum {
+	top: 2000px;
+	left:550px;
+}
+
+#aboutUs {
+	top:1300px;
+	left:-400px;
+}
+
+ 
+
