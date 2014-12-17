@@ -9,10 +9,8 @@
         <title>GOTO ISRAEL | TODAY</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-        <link rel="stylesheet" href="css/scrollpath.css" /> 
-        <link rel="stylesheet" href="css/main.css">
+        
+        <link rel="stylesheet" href="css/main_sass.css">
 
         <script type="text/javascript" src="js/vendor/prefixfree.min.js"></script>
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
@@ -22,7 +20,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div id="page-wrapper">
+        <div id="page-wrapper clearfix">
       
             <div id="page-header">
                 <header class="clearfix">
@@ -48,8 +46,32 @@
                 </header>
             </div> <!-- page-header END -->
             
-            
+            <div id="sidebar_nav">
+                <div id='cssmenu'>
+                    <ul>
+                       <li><a href='#'><span>История</span></a></li>
+                       <li class='active has-sub'><a href='#'><span>Справка о стране</span></a>
+                          <ul>
+                             <li class='has-sub'><a href='#'><span>Население</span></a>
+                                <ul>
+                                   <li><a href='#'><span>Этнос</span></a></li>
+                                   <li class='last'><a href='#'><span>Язык</span></a></li>
+                                </ul>
+                             </li>
+                             <li class='has-sub'><a href='#'><span>География</span></a>
+                             <li class='has-sub'><a href='#'><span>Экономика</span></a>
+                             <li class='has-sub'><a href='#'><span>Политика</span></a>
+
+                             </li>
+                          </ul>
+                       </li>
+                       <li><a href='#'><span>About</span></a></li>
+                       <li class='last'><a href='#'><span>Contact</span></a></li>
+                    </ul>
+                </div>
+            </div>
             <div id="content-wrapper">
+        
                 <div id="home" class="page-item">
                     
                     <h1>Home</h1>

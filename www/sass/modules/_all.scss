@@ -1,0 +1,125 @@
+//======================== 
+//   GENERAL                    
+//========================
+html, body {
+  width: 100%;
+  height: 100%; 
+  overflow: hidden; 
+}
+
+
+#page-wrapper {
+  width: $page_wrapper_width;
+  height: $page_wrapper_height;
+  overflow: hidden;  
+}
+
+#sidebar_nav {
+  margin-top: 180px;
+  margin-left: .2%;
+  border: 1px solid grey;
+  width:20%;
+  float:left;
+}
+
+//======================== 
+//   HEADER                    
+//========================
+#page-header {
+	position: fixed;
+	width:100%;
+	height:100px;
+	z-index: 1000;
+	header {
+		position: relative;
+		top:5px;
+		left:5%;
+		div {
+			float:left;
+		}
+	}
+	.nav {
+		margin-top: 8px;
+		ul {
+			list-style-type: none;
+			li {
+				display: inline-block;
+			}
+		}
+		
+		a {
+			text-decoration: none;
+  			font-size: .7em;
+  			padding:7px;
+  			color:white;
+  			background-color: black;
+  			&:hover {
+  				color:black;
+  				background-color: white;
+  				border: 1px solid grey;
+ 			}
+		}
+	}
+	.settings {
+		margin-top: 8px;
+		
+		button.show-path-btn {
+			color:black;
+			font-size: .8em;
+			margin-top: 20px;
+			margin-left: 20px;
+			width:150px;
+			display: block;
+		}
+	}
+
+
+}
+
+//======================== 
+//   CONTENT                    
+//========================
+
+
+#content-wrapper {
+	position: relative;
+	.page-item {
+	 	position: absolute;
+	 	width:70vw; 
+	  	height:500px;
+	  	overflow-y: scroll;
+ 
+	}
+
+	#isr-about {
+		top:600px;
+		left:750px;
+	}
+
+	#isr-imm {
+		top:1600px;
+		left:2000px;
+	}
+
+	#blogs {
+		left:2800px;
+		top: 2800px;
+	}
+
+	#forum {
+		top: 2000px;
+		left:550px;
+	}
+
+	#aboutUs {
+		top:1300px;
+		left:-400px;
+	}
+}
+
+
+
+
+
+
+ /*page item positioning*/

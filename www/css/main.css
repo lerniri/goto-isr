@@ -1,12 +1,3 @@
-@import url(normalize.min.css);
-@import url(boilerplate.css);
-
-html, body {
-  width: 100%;
-  height: 100%; 
-  overflow: hidden; 
-}
-
 
 
 #page-wrapper {
@@ -17,104 +8,7 @@ html, body {
 }
 
 
-/* 					PAGE HEADER
-=============================================================*/
-#page-header {
-	position: fixed;
-	width:100%;
-	height:100px;
-	z-index: 1000;
-}
-  
-#page-header header {
-  position: relative;
-  top:5px;
-  left:5%;
-}	
-    
-#page-header header div {
-  float:left;
-}
 
-.nav,
-.settings {
-  margin-top: 8px;
-}
-
-
-.nav ul {
-  list-style-type: none;
-}
-      
-
-.nav ul li { 
-   display: inline-block;
-}  
-
-.nav a {
-  text-decoration: none;
-  font-size: .7em;
-  padding:7px;
-  color:white;
-  background-color: black;
-}    
-
-.nav a:hover {
-  
-  color:black;
-  background-color: white;
-  border: 1px solid grey;
-}
-
-
-.settings button.show-path-btn {
-  color:black;
-  font-size: .8em;
-  margin-top: 20px;
-  margin-left: 20px;
-  width:150px;
-  display: block;
-}
-
-/*# sourceMappingURL=main.css.mgap */
-
-
-/* 					CONTENT WRAPPER
-=============================================================*/
-#content-wrapper {
-	position: relative;
-}
- .page-item {
- 	position: absolute;
- 	max-width:960px; 
-  border: 1px solid black;
-}
-
- /*page item positioning*/
-#isr-about {
-	top:600px;
-	left:750px;
-}
-
-#isr-imm {
-	top:1600px;
-	left:2000px;
-}
-
-#blogs {
-	left:2800px;
-	top: 2800px;
-}
-
-#forum {
-	top: 2000px;
-	left:550px;
-}
-
-#aboutUs {
-	top:1300px;
-	left:-400px;
-}
 
  
 
