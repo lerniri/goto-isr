@@ -497,6 +497,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* line 1, ../sass/partials/_buttons.scss */
+.show-path-btn {
+  color: black;
+  font-size: .8em;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 150px;
+  display: block; }
+
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 /* line 3, ../sass/vendor/_boilerplate.scss */
 html,
@@ -879,6 +888,213 @@ nav a:hover {
 .sp-scroll-bar .sp-scroll-handle:hover {
   background: black; }
 
+/* line 3, ../sass/vendor/_accordion_menu.scss */
+#cssmenu {
+  position: relative;
+  margin: 0;
+  font-family: 'Roboto Condensed';
+  line-height: 1;
+  width: 250px; }
+
+/* line 10, ../sass/vendor/_accordion_menu.scss */
+.align-right {
+  float: right; }
+
+/* line 13, ../sass/vendor/_accordion_menu.scss */
+#cssmenu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block; }
+
+/* line 19, ../sass/vendor/_accordion_menu.scss */
+#cssmenu ul li {
+  position: relative;
+  margin: 0;
+  padding: 0; }
+
+/* line 24, ../sass/vendor/_accordion_menu.scss */
+#cssmenu ul li a {
+  text-decoration: none;
+  cursor: pointer; }
+
+/* line 28, ../sass/vendor/_accordion_menu.scss */
+#cssmenu > ul > li > a {
+  color: #dddddd;
+  text-transform: uppercase;
+  display: block;
+  padding: 20px;
+  border-top: 1px solid #000000;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+  background: #222222;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 300;
+  -webkit-transition: all 0.25s ease-in;
+  -moz-transition: all 0.25s ease-in;
+  -ms-transition: all 0.25s ease-in;
+  -o-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+  position: relative; }
+
+/* line 48, ../sass/vendor/_accordion_menu.scss */
+#cssmenu > ul > li:first-child > a {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px; }
+
+/* line 52, ../sass/vendor/_accordion_menu.scss */
+#cssmenu > ul > li:last-child > a {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom: 1px solid #000000; }
+
+/* line 57, ../sass/vendor/_accordion_menu.scss */
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li.open > a,
+#cssmenu > ul > li.active > a {
+  background: #151515;
+  color: #ffffff; }
+
+/* line 63, ../sass/vendor/_accordion_menu.scss */
+#cssmenu ul > li.has-sub > a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 13px solid #000000;
+  border-botom: 13px solid transparent;
+  border-left: 125px solid transparent;
+  border-right: 125px solid transparent;
+  left: 0;
+  bottom: -13px;
+  bottom: 0px;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease; }
+
+/* line 84, ../sass/vendor/_accordion_menu.scss */
+#cssmenu ul > li.has-sub > a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 13px solid #151515;
+  border-botom: 13px solid transparent;
+  border-left: 125px solid transparent;
+  border-right: 125px solid transparent;
+  left: 0;
+  bottom: -12px;
+  bottom: -1px;
+  z-index: 3;
+  opacity: 0;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease; }
+
+/* line 105, ../sass/vendor/_accordion_menu.scss */
+#cssmenu ul > li.has-sub::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-top-color: #dddddd;
+  z-index: 2;
+  right: 20px;
+  top: 24.5px;
+  pointer-events: none; }
+
+/* line 118, ../sass/vendor/_accordion_menu.scss */
+#cssmenu ul > li:hover::after,
+#cssmenu ul > li.active::after,
+#cssmenu ul > li.open::after {
+  border-top-color: #ffffff; }
+
+/* line 123, ../sass/vendor/_accordion_menu.scss */
+#cssmenu ul > li.has-sub.open > a::after {
+  opacity: 1;
+  bottom: -13px; }
+
+/* line 127, ../sass/vendor/_accordion_menu.scss */
+#cssmenu ul > li.has-sub.open > a::before {
+  opacity: 1;
+  bottom: -12px; }
+
+/* line 131, ../sass/vendor/_accordion_menu.scss */
+#cssmenu ul ul {
+  display: none; }
+
+/* line 134, ../sass/vendor/_accordion_menu.scss */
+#cssmenu ul ul li {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc; }
+
+/* line 138, ../sass/vendor/_accordion_menu.scss */
+#cssmenu ul ul li a {
+  background: #f1f1f1;
+  display: block;
+  position: relative;
+  font-size: 15px;
+  padding: 14px 20px;
+  border-bottom: 1px solid #dddddd;
+  color: #777777;
+  font-weight: 300;
+  -webkit-transition: all 0.25s ease-in;
+  -moz-transition: all 0.25s ease-in;
+  -ms-transition: all 0.25s ease-in;
+  -o-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in; }
+
+/* line 153, ../sass/vendor/_accordion_menu.scss */
+#cssmenu ul ul li:first-child > a {
+  padding-top: 18px; }
+
+/* line 156, ../sass/vendor/_accordion_menu.scss */
+#cssmenu ul ul ul li {
+  border: 0; }
+
+/* line 159, ../sass/vendor/_accordion_menu.scss */
+#cssmenu ul ul li:hover > a,
+#cssmenu ul ul li.open > a,
+#cssmenu ul ul li.active > a {
+  background: #e4e4e4;
+  color: #666666; }
+
+/* line 165, ../sass/vendor/_accordion_menu.scss */
+#cssmenu ul ul > li.has-sub > a::after {
+  border-top: 13px solid #dddddd; }
+
+/* line 168, ../sass/vendor/_accordion_menu.scss */
+#cssmenu ul ul > li.has-sub > a::before {
+  border-top: 13px solid #e4e4e4; }
+
+/* line 171, ../sass/vendor/_accordion_menu.scss */
+#cssmenu ul ul ul li a {
+  padding-left: 30px; }
+
+/* line 174, ../sass/vendor/_accordion_menu.scss */
+#cssmenu ul ul > li.has-sub::after {
+  top: 18.5px;
+  border-width: 6px;
+  border-top-color: #777777; }
+
+/* line 179, ../sass/vendor/_accordion_menu.scss */
+#cssmenu ul ul > li:hover::after,
+#cssmenu ul ul > li.active::after,
+#cssmenu ul ul > li.open::after {
+  border-top-color: #666666; }
+
 /* line 4, ../sass/modules/_all.scss */
 html, body {
   width: 100%;
@@ -895,83 +1111,74 @@ html, body {
 #sidebar_nav {
   margin-top: 180px;
   margin-left: .2%;
-  border: 1px solid grey;
   width: 20%;
   float: left; }
 
-/* line 28, ../sass/modules/_all.scss */
+/* line 27, ../sass/modules/_all.scss */
 #page-header {
   position: fixed;
   width: 100%;
   height: 100px;
   z-index: 1000; }
-  /* line 33, ../sass/modules/_all.scss */
+  /* line 32, ../sass/modules/_all.scss */
   #page-header header {
     position: relative;
     top: 5px;
     left: 5%; }
-    /* line 37, ../sass/modules/_all.scss */
+    /* line 36, ../sass/modules/_all.scss */
     #page-header header div {
       float: left; }
-  /* line 41, ../sass/modules/_all.scss */
+  /* line 40, ../sass/modules/_all.scss */
   #page-header .nav {
     margin-top: 8px; }
-    /* line 43, ../sass/modules/_all.scss */
+    /* line 42, ../sass/modules/_all.scss */
     #page-header .nav ul {
       list-style-type: none; }
-      /* line 45, ../sass/modules/_all.scss */
+      /* line 44, ../sass/modules/_all.scss */
       #page-header .nav ul li {
         display: inline-block; }
-    /* line 50, ../sass/modules/_all.scss */
+    /* line 49, ../sass/modules/_all.scss */
     #page-header .nav a {
       text-decoration: none;
       font-size: .7em;
       padding: 7px;
       color: white;
       background-color: black; }
-      /* line 56, ../sass/modules/_all.scss */
+      /* line 55, ../sass/modules/_all.scss */
       #page-header .nav a:hover {
         color: black;
         background-color: white;
         border: 1px solid grey; }
-  /* line 63, ../sass/modules/_all.scss */
+  /* line 62, ../sass/modules/_all.scss */
   #page-header .settings {
     margin-top: 8px; }
-    /* line 66, ../sass/modules/_all.scss */
-    #page-header .settings button.show-path-btn {
-      color: black;
-      font-size: .8em;
-      margin-top: 20px;
-      margin-left: 20px;
-      width: 150px;
-      display: block; }
 
-/* line 84, ../sass/modules/_all.scss */
+/* line 72, ../sass/modules/_all.scss */
 #content-wrapper {
   position: relative; }
-  /* line 86, ../sass/modules/_all.scss */
+  /* line 74, ../sass/modules/_all.scss */
   #content-wrapper .page-item {
     position: absolute;
     width: 70vw;
     height: 500px;
     overflow-y: scroll; }
-  /* line 94, ../sass/modules/_all.scss */
+  /* line 82, ../sass/modules/_all.scss */
   #content-wrapper #isr-about {
     top: 600px;
     left: 750px; }
-  /* line 99, ../sass/modules/_all.scss */
+  /* line 87, ../sass/modules/_all.scss */
   #content-wrapper #isr-imm {
     top: 1600px;
     left: 2000px; }
-  /* line 104, ../sass/modules/_all.scss */
+  /* line 92, ../sass/modules/_all.scss */
   #content-wrapper #blogs {
     left: 2800px;
     top: 2800px; }
-  /* line 109, ../sass/modules/_all.scss */
+  /* line 97, ../sass/modules/_all.scss */
   #content-wrapper #forum {
     top: 2000px;
     left: 550px; }
-  /* line 114, ../sass/modules/_all.scss */
+  /* line 102, ../sass/modules/_all.scss */
   #content-wrapper #aboutUs {
     top: 1300px;
     left: -400px; }
