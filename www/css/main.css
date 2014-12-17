@@ -86,7 +86,8 @@ html, body {
 }
  .page-item {
  	position: absolute;
- 	max-width:800px; 
+ 	max-width:960px; 
+  border: 1px solid black;
 }
 
  /*page item positioning*/
