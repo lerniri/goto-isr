@@ -86,9 +86,11 @@ function init() {
 		$(this).click(function(e) {
 	 		e.preventDefault();
 			
+			$('html, body').scrollTop($(".page-item").css("margin-top"));
 			$('html, body').animate({
-				scrollLeft: $(target).offset().left
-			}, 2000)	;
+				scrollLeft: $(target).offset().left,
+
+			}, 2500, "easeOutSine")	;
 
 	 		//$.fn.scrollPath("scrollTo", target, 1000, "easeInOutSine");
 		});

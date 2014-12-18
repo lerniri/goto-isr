@@ -1076,67 +1076,69 @@ html, body {
 #page-header {
   position: fixed;
   width: 100%;
-  height: 100px;
-  z-index: 1000; }
-  /* line 29, ../sass/modules/_all.scss */
+  height: 120px;
+  z-index: 1000;
+  background-color: white;
+  border-bottom: 1px solid black; }
+  /* line 31, ../sass/modules/_all.scss */
   #page-header header {
     position: relative;
     top: 5px;
     left: 5%; }
-    /* line 33, ../sass/modules/_all.scss */
+    /* line 35, ../sass/modules/_all.scss */
     #page-header header div {
       float: left; }
-  /* line 37, ../sass/modules/_all.scss */
+  /* line 39, ../sass/modules/_all.scss */
   #page-header .nav {
     margin-top: 8px; }
-    /* line 39, ../sass/modules/_all.scss */
+    /* line 41, ../sass/modules/_all.scss */
     #page-header .nav ul {
       list-style-type: none; }
-      /* line 41, ../sass/modules/_all.scss */
+      /* line 43, ../sass/modules/_all.scss */
       #page-header .nav ul li {
         display: inline-block; }
-    /* line 46, ../sass/modules/_all.scss */
+    /* line 48, ../sass/modules/_all.scss */
     #page-header .nav a {
       text-decoration: none;
       font-size: .7em;
       padding: 7px;
       color: white;
       background-color: black; }
-      /* line 52, ../sass/modules/_all.scss */
+      /* line 54, ../sass/modules/_all.scss */
       #page-header .nav a:hover {
         color: black;
         background-color: white;
         border: 1px solid grey; }
-  /* line 59, ../sass/modules/_all.scss */
+  /* line 61, ../sass/modules/_all.scss */
   #page-header .settings {
     margin-top: 8px; }
 
-/* line 69, ../sass/modules/_all.scss */
+/* line 71, ../sass/modules/_all.scss */
 #content-wrapper {
   position: relative; }
-  /* line 72, ../sass/modules/_all.scss */
+  /* line 74, ../sass/modules/_all.scss */
   #content-wrapper > div {
     float: left; }
-  /* line 75, ../sass/modules/_all.scss */
+  /* line 77, ../sass/modules/_all.scss */
   #content-wrapper .page-item {
     margin-top: 180px;
     width: 80vw;
     height: 100%; }
-    /* line 80, ../sass/modules/_all.scss */
+    /* line 82, ../sass/modules/_all.scss */
     #content-wrapper .page-item .sidebar_nav {
       margin-left: .5%;
       margin-right: 2%;
       height: 100%;
       float: left; }
-    /* line 87, ../sass/modules/_all.scss */
+    /* line 89, ../sass/modules/_all.scss */
     #content-wrapper .page-item .content_div {
       overflow: hidden; }
-  /* line 92, ../sass/modules/_all.scss */
+  /* line 94, ../sass/modules/_all.scss */
   #content-wrapper .animation_div {
     background: url("../img/gotoisrael_crowd.png") bottom no-repeat;
     width: 2222px;
     height: 100vh; }
-    /* line 97, ../sass/modules/_all.scss */
+    /* line 100, ../sass/modules/_all.scss */
     #content-wrapper .animation_div span {
       margin-top: 500px;
       display: block;
