@@ -8,7 +8,7 @@ function init() {
 
 
 
-	
+
 	//==================================
 	//			SCROLLING PATH
 	//==================================
@@ -76,6 +76,24 @@ function init() {
 	// 	});
 	// });
 
+
+
+	//Scrolling
+
+
+	$(".nav").find("a").each(function() {
+		var target = $(this).attr("href");
+		$(this).click(function(e) {
+	 		e.preventDefault();
+			
+			$('html, body').animate({
+				scrollTop: $(target).offset().left
+			}, 2000)	;
+
+	 		//$.fn.scrollPath("scrollTo", target, 1000, "easeInOutSine");
+		});
+	})
+	
 
 	$('#cssmenu li.has-sub>a').on('click', function(){
 		$(this).removeAttr('href');

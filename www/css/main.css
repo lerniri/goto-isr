@@ -1136,6 +1136,17 @@ html, body {
     background: url("../img/gotoisrael_crowd.png") bottom no-repeat;
     width: 2222px;
     height: 100vh; }
+    /* line 96, ../sass/modules/_all.scss */
+    #content-wrapper .animation_div span {
+      margin-top: 500px;
+      display: block;
+      font-size: 1.6em;
+      color: tomato;
+      -ms-transform: rotate(7deg);
+      /* IE 9 */
+      -webkit-transform: rotate(7deg);
+      /* Chrome, Safari, Opera */
+      transform: rotate(7deg); }
 
 /*page item positioning*/
 
