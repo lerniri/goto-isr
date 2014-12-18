@@ -87,7 +87,7 @@ function init() {
 	 		e.preventDefault();
 			
 			$('html, body').animate({
-				scrollTop: $(target).offset().left
+				scrollLeft: $(target).offset().left
 			}, 2000)	;
 
 	 		//$.fn.scrollPath("scrollTo", target, 1000, "easeInOutSine");
