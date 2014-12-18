@@ -856,38 +856,6 @@ nav a:hover {
   h2,
   h3 {
     page-break-after: avoid; } }
-/* =========================================
-  	Scroll bar styles for jQuery Scroll Path
-  	      (http://joelb.me/scrollpath)
-   ========================================= */
-/* line 6, ../sass/vendor/_scrollpath.scss */
-.sp-scroll-bar {
-  position: fixed;
-  z-index: 9999;
-  right: 0;
-  top: 5%;
-  width: 10px;
-  height: 90%;
-  border-radius: 5px; }
-
-/* line 16, ../sass/vendor/_scrollpath.scss */
-.sp-scroll-bar:hover {
-  background: white;
-  background: rgba(255, 255, 255, 0.1); }
-
-/* line 21, ../sass/vendor/_scrollpath.scss */
-.sp-scroll-bar .sp-scroll-handle {
-  position: absolute;
-  width: 100%;
-  height: 50px;
-  border-radius: inherit;
-  background: gray;
-  background: rgba(0, 0, 0, 0.7); }
-
-/* line 30, ../sass/vendor/_scrollpath.scss */
-.sp-scroll-bar .sp-scroll-handle:hover {
-  background: black; }
-
 /* line 3, ../sass/vendor/_accordion_menu.scss */
 #cssmenu {
   position: relative;
@@ -1098,90 +1066,76 @@ nav a:hover {
 /* line 4, ../sass/modules/_all.scss */
 html, body {
   width: 100%;
-  height: 100%;
-  overflow: hidden; }
+  height: 100%; }
 
 /* line 12, ../sass/modules/_all.scss */
 #page-wrapper {
-  width: 9120px;
-  height: 24000px;
-  overflow: hidden; }
+  width: 124000px; }
 
-/* line 18, ../sass/modules/_all.scss */
-#sidebar_nav {
-  margin-top: 150px;
-  margin-left: .2%;
-  width: 20vw;
-  float: left; }
-
-/* line 28, ../sass/modules/_all.scss */
+/* line 23, ../sass/modules/_all.scss */
 #page-header {
   position: fixed;
   width: 100%;
   height: 100px;
   z-index: 1000; }
-  /* line 33, ../sass/modules/_all.scss */
+  /* line 28, ../sass/modules/_all.scss */
   #page-header header {
     position: relative;
     top: 5px;
     left: 5%; }
-    /* line 37, ../sass/modules/_all.scss */
+    /* line 32, ../sass/modules/_all.scss */
     #page-header header div {
       float: left; }
-  /* line 41, ../sass/modules/_all.scss */
+  /* line 36, ../sass/modules/_all.scss */
   #page-header .nav {
     margin-top: 8px; }
-    /* line 43, ../sass/modules/_all.scss */
+    /* line 38, ../sass/modules/_all.scss */
     #page-header .nav ul {
       list-style-type: none; }
-      /* line 45, ../sass/modules/_all.scss */
+      /* line 40, ../sass/modules/_all.scss */
       #page-header .nav ul li {
         display: inline-block; }
-    /* line 50, ../sass/modules/_all.scss */
+    /* line 45, ../sass/modules/_all.scss */
     #page-header .nav a {
       text-decoration: none;
       font-size: .7em;
       padding: 7px;
       color: white;
       background-color: black; }
-      /* line 56, ../sass/modules/_all.scss */
+      /* line 51, ../sass/modules/_all.scss */
       #page-header .nav a:hover {
         color: black;
         background-color: white;
         border: 1px solid grey; }
-  /* line 63, ../sass/modules/_all.scss */
+  /* line 58, ../sass/modules/_all.scss */
   #page-header .settings {
     margin-top: 8px; }
 
-/* line 73, ../sass/modules/_all.scss */
+/* line 68, ../sass/modules/_all.scss */
 #content-wrapper {
   position: relative; }
-  /* line 75, ../sass/modules/_all.scss */
+  /* line 71, ../sass/modules/_all.scss */
+  #content-wrapper > div {
+    float: left; }
+  /* line 74, ../sass/modules/_all.scss */
   #content-wrapper .page-item {
-    position: absolute;
-    width: 70vw;
-    height: 70vh;
-    overflow-y: scroll; }
-  /* line 83, ../sass/modules/_all.scss */
-  #content-wrapper #isr-about {
-    top: 600px;
-    left: 750px; }
-  /* line 88, ../sass/modules/_all.scss */
-  #content-wrapper #isr-imm {
-    top: 1600px;
-    left: 2000px; }
-  /* line 93, ../sass/modules/_all.scss */
-  #content-wrapper #blogs {
-    left: 2800px;
-    top: 2800px; }
-  /* line 98, ../sass/modules/_all.scss */
-  #content-wrapper #forum {
-    top: 2000px;
-    left: 550px; }
-  /* line 103, ../sass/modules/_all.scss */
-  #content-wrapper #aboutUs {
-    top: 1300px;
-    left: -400px; }
+    margin-top: 180px;
+    width: 80vw;
+    height: 100%; }
+    /* line 79, ../sass/modules/_all.scss */
+    #content-wrapper .page-item .sidebar_nav {
+      margin-left: .5%;
+      margin-right: 2%;
+      height: 100%;
+      float: left; }
+    /* line 86, ../sass/modules/_all.scss */
+    #content-wrapper .page-item .content_div {
+      overflow: hidden; }
+  /* line 91, ../sass/modules/_all.scss */
+  #content-wrapper .animation_div {
+    background: url("../img/gotoisrael_crowd.png") bottom no-repeat;
+    width: 2222px;
+    height: 100vh; }
 
 /*page item positioning*/
 

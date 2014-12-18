@@ -4,23 +4,18 @@
 html, body {
   width: 100%;
   height: 100%; 
-  overflow: hidden;
+  
 
 }
 
 
 #page-wrapper {
   width: $page_wrapper_width;
-  height: $page_wrapper_height;
-  overflow: hidden;  
+  //height: $page_wrapper_height;
+    
 }
 
-#sidebar_nav {
-  margin-top: 150px;
-  margin-left: .2%;
-  width:20vw;
-  float:left;
-}
+
 
 //======================== 
 //   HEADER                    
@@ -72,39 +67,62 @@ html, body {
 
 #content-wrapper {
 	position: relative;
+
+	> div {
+		float:left;	
+	}
 	.page-item {
-	 	position: absolute;
-	 	width:70vw; 
-	  	height:70vh;
-	  	overflow-y: scroll;
- 
+	 	margin-top: 180px;
+	 	width: 80vw;
+	 	height:100%;
+	  	
+	  	.sidebar_nav {
+  			margin-left: .5%;
+  			margin-right: 2%;
+  			height:100%;
+  			float:left; 				
+		}
+
+		.content_div {
+			overflow: hidden;
+		}
 	}
 
-	#isr-about {
-		top:600px;
-		left:750px;
-	}
-
-	#isr-imm {
-		top:1600px;
-		left:2000px;
-	}
-
-	#blogs {
-		left:2800px;
-		top: 2800px;
-	}
-
-	#forum {
-		top: 2000px;
-		left:550px;
-	}
-
-	#aboutUs {
-		top:1300px;
-		left:-400px;
-	}
+	.animation_div {
+		background: url('../img/gotoisrael_crowd.png') bottom no-repeat;
+		//margin-top:180px;
+		width: 2222px;
+		height:100vh;
+	}	
 }
+
+
+
+	// #isr-about {
+	// 	top:600px;
+	// 	left:750px;
+	// }
+
+	// #isr-imm {
+	// 	top:1600px;
+	// 	left:2000px;
+	// }
+
+	// #blogs {
+	// 	left:2800px;
+	// 	top: 2800px;
+	// }
+
+	// #forum {
+	// 	top: 2000px;
+	// 	left:550px;
+	// }
+
+	// #aboutUs {
+	// 	top:1300px;
+	// 	left:-400px;
+	// }
+
 
  /*page item positioning*/
 
