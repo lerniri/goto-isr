@@ -10,8 +10,9 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <link rel="stylesheet" href="css/main_sass.css">
-
+        <link rel="stylesheet" href="css/main.css">
+        <!--link rel="stylesheet" href="css/main_sass.css"-->
+        <!-- script src="js/vendor/jquery.mousewheel.min.js"></script-->
         <script type="text/javascript" src="js/vendor/prefixfree.min.js"></script>
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
@@ -20,7 +21,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div id="page-wrapper clearfix">
+        <div id="page-wrapper" class="clearfix">
       
             <div id="page-header">
                 <header class="clearfix">
@@ -29,12 +30,12 @@
                     </div>
                     <div class="nav">
                         <ul>
-                            <li><a href="#home">Start Page</a></li>
-                            <li><a href="#isr-about">General Info</a></li>
-                            <li><a href="#isr-imm">Immigration Info</a></li>
-                            <li><a href="#blogs">Blogs</a></li>
-                            <li><a href="#forum">Forum</a></li>
-                            <li><a href="#aboutUs">About Us</a></li>
+                            <li><a href="#home">Начало</a></li>
+                            <li><a href="#isr-about">Об Израиле</a></li>
+                            <li><a href="#isr-imm">Иммиграция</a></li>
+                            <li><a href="#blogs">Блог</a></li>
+                            <li><a href="#forum">Форум</a></li>
+                            <li><a href="#aboutUs">О Нас</a></li>
                         </ul>
                         <!-- Signpost navigation menu will be presented here -->
                     </div>        
@@ -46,87 +47,92 @@
                 </header>
             </div> <!-- page-header END -->
             
-            <div id="sidebar_nav">
-                <div id='cssmenu'>
-                    <ul>
-                       <li><a href='#'><span>История</span></a></li>
-                       <li class='active has-sub'><a href='#'><span>Справка о стране</span></a>
-                          <ul>
-                             <li class='has-sub'><a href='#'><span>Население</span></a>
-                                <ul>
-                                   <li><a href='#'><span>Этнос</span></a></li>
-                                   <li class='last'><a href='#'><span>Язык</span></a></li>
-                                </ul>
-                             </li>
-                             <li><a href='#'><span>География</span></a>
-                             <li><a href='#'><span>Экономика</span></a>
-                             <li><a href='#'><span>Политика</span></a>
-
-                             </li>
-                          </ul>
-                       </li>
-                       <li><a href='#'><span>About</span></a></li>
-                       <li class='last'><a href='#'><span>Contact</span></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div id="content-wrapper">
+            
+            <div id="content" class="clearfix">
         
-                <div id="home" class="page-item">
-                    
-                    <h1>Home</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus congue molestie. Phasellus sagittis lorem sit amet nisl ornare ornare. Nunc placerat ex nec orci aliquam molestie. Nunc tempor sollicitudin metus sit amet pellentesque. Aliquam rhoncus vestibulum nibh sit amet rutrum. Aliquam id convallis magna. Sed nec mauris magna. In bibendum interdum nisi a interdum. Curabitur in diam a lorem vestibulum pulvinar ut at lorem. Cras in tortor magna. Nam tincidunt diam ac lacus sagittis, a dapibus magna mattis.
+                <div id="sidebar_nav">
+                    <div id='cssmenu'>
+                        <ul>
+                           <li><a href='#'><span>История</span></a></li>
+                           <li class='active has-sub'><a href='#'><span>Справка о стране</span></a>
+                              <ul>
+                                 <li class='has-sub'><a href='#'><span>Население</span></a>
+                                    <ul>
+                                       <li><a href='#'><span>Этнос</span></a></li>
+                                       <li class='last'><a href='#'><span>Язык</span></a></li>
+                                    </ul>
+                                 </li>
+                                 <li><a href='#'><span>География</span></a>
+                                 <li><a href='#'><span>Экономика</span></a>
+                                 <li><a href='#'><span>Политика</span></a>
 
-                        Vivamus eget felis finibus, porttitor nisi a, sollicitudin justo. Morbi orci purus, ullamcorper sed metus sit amet, rutrum ultrices metus. Quisque faucibus mi sit amet odio maximus dictum. Quisque fermentum, justo ut congue euismod, nibh nisl molestie est, vitae gravida nibh ipsum eu ex. Proin malesuada est mi. Proin dictum ligula non sagittis congue. Cras varius justo at finibus fermentum. 
-                    </p>
+                                 </li>
+                              </ul>
+                           </li>
+                           <li><a href='#'><span>Здравоохранение</span></a></li>
+                           <li class='last'><a href='#'><span>Образование</span></a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div id="isr-about" class="page-item">  
-                    <h1>Israel About</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus congue molestie. Phasellus sagittis lorem sit amet nisl ornare ornare. Nunc placerat ex nec orci aliquam molestie. Nunc tempor sollicitudin metus sit amet pellentesque. Aliquam rhoncus vestibulum nibh sit amet rutrum. Aliquam id convallis magna. Sed nec mauris magna. In bibendum interdum nisi a interdum. Curabitur in diam a lorem vestibulum pulvinar ut at lorem. Cras in tortor magna. Nam tincidunt diam ac lacus sagittis, a dapibus magna mattis.
+                
+                <div id="content-wrapper">
+                    <div id="home" class="page-item">
+                        
+                        <h1>Начало</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus congue molestie. Phasellus sagittis lorem sit amet nisl ornare ornare. Nunc placerat ex nec orci aliquam molestie. Nunc tempor sollicitudin metus sit amet pellentesque. Aliquam rhoncus vestibulum nibh sit amet rutrum. Aliquam id convallis magna. Sed nec mauris magna. In bibendum interdum nisi a interdum. Curabitur in diam a lorem vestibulum pulvinar ut at lorem. Cras in tortor magna. Nam tincidunt diam ac lacus sagittis, a dapibus magna mattis.
 
-                        Vivamus eget felis finibus, porttitor nisi a, sollicitudin justo. Morbi orci purus, ullamcorper sed metus sit amet, rutrum ultrices metus. Quisque faucibus mi sit amet odio maximus dictum. Quisque fermentum, justo ut congue euismod, nibh nisl molestie est, vitae gravida nibh ipsum eu ex. Proin malesuada est mi. Proin dictum ligula non sagittis congue. Cras varius justo at finibus fermentum. 
-                    </p>       
-                </div>
-                <div id="isr-imm" class="page-item">
-                    <h1>Israel Immigration</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus congue molestie. Phasellus sagittis lorem sit amet nisl ornare ornare. Nunc placerat ex nec orci aliquam molestie. Nunc tempor sollicitudin metus sit amet pellentesque. Aliquam rhoncus vestibulum nibh sit amet rutrum. Aliquam id convallis magna. Sed nec mauris magna. In bibendum interdum nisi a interdum. Curabitur in diam a lorem vestibulum pulvinar ut at lorem. Cras in tortor magna. Nam tincidunt diam ac lacus sagittis, a dapibus magna mattis.
+                            Vivamus eget felis finibus, porttitor nisi a, sollicitudin justo. Morbi orci purus, ullamcorper sed metus sit amet, rutrum ultrices metus. Quisque faucibus mi sit amet odio maximus dictum. Quisque fermentum, justo ut congue euismod, nibh nisl molestie est, vitae gravida nibh ipsum eu ex. Proin malesuada est mi. Proin dictum ligula non sagittis congue. Cras varius justo at finibus fermentum. 
+                        </p>
+                    </div>
+                    <div id="isr-about" class="page-item">  
+                        <h1>Об Израиле</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus congue molestie. Phasellus sagittis lorem sit amet nisl ornare ornare. Nunc placerat ex nec orci aliquam molestie. Nunc tempor sollicitudin metus sit amet pellentesque. Aliquam rhoncus vestibulum nibh sit amet rutrum. Aliquam id convallis magna. Sed nec mauris magna. In bibendum interdum nisi a interdum. Curabitur in diam a lorem vestibulum pulvinar ut at lorem. Cras in tortor magna. Nam tincidunt diam ac lacus sagittis, a dapibus magna mattis.
 
-                        Vivamus eget felis finibus, porttitor nisi a, sollicitudin justo. Morbi orci purus, ullamcorper sed metus sit amet, rutrum ultrices metus. Quisque faucibus mi sit amet odio maximus dictum. Quisque fermentum, justo ut congue euismod, nibh nisl molestie est, vitae gravida nibh ipsum eu ex. Proin malesuada est mi. Proin dictum ligula non sagittis congue. Cras varius justo at finibus fermentum. 
-                    </p>       
+                            Vivamus eget felis finibus, porttitor nisi a, sollicitudin justo. Morbi orci purus, ullamcorper sed metus sit amet, rutrum ultrices metus. Quisque faucibus mi sit amet odio maximus dictum. Quisque fermentum, justo ut congue euismod, nibh nisl molestie est, vitae gravida nibh ipsum eu ex. Proin malesuada est mi. Proin dictum ligula non sagittis congue. Cras varius justo at finibus fermentum. 
+                        </p>       
+                    </div>
+                    <div id="isr-imm" class="page-item">
+                        <h1>Иммиграция</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus congue molestie. Phasellus sagittis lorem sit amet nisl ornare ornare. Nunc placerat ex nec orci aliquam molestie. Nunc tempor sollicitudin metus sit amet pellentesque. Aliquam rhoncus vestibulum nibh sit amet rutrum. Aliquam id convallis magna. Sed nec mauris magna. In bibendum interdum nisi a interdum. Curabitur in diam a lorem vestibulum pulvinar ut at lorem. Cras in tortor magna. Nam tincidunt diam ac lacus sagittis, a dapibus magna mattis.
 
-                </div>
-                <div id="blogs" class="page-item">
-                    <h1>Blogs</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus congue molestie. Phasellus sagittis lorem sit amet nisl ornare ornare. Nunc placerat ex nec orci aliquam molestie. Nunc tempor sollicitudin metus sit amet pellentesque. Aliquam rhoncus vestibulum nibh sit amet rutrum. Aliquam id convallis magna. Sed nec mauris magna. In bibendum interdum nisi a interdum. Curabitur in diam a lorem vestibulum pulvinar ut at lorem. Cras in tortor magna. Nam tincidunt diam ac lacus sagittis, a dapibus magna mattis.
+                            Vivamus eget felis finibus, porttitor nisi a, sollicitudin justo. Morbi orci purus, ullamcorper sed metus sit amet, rutrum ultrices metus. Quisque faucibus mi sit amet odio maximus dictum. Quisque fermentum, justo ut congue euismod, nibh nisl molestie est, vitae gravida nibh ipsum eu ex. Proin malesuada est mi. Proin dictum ligula non sagittis congue. Cras varius justo at finibus fermentum. 
+                        </p>       
 
-                        Vivamus eget felis finibus, porttitor nisi a, sollicitudin justo. Morbi orci purus, ullamcorper sed metus sit amet, rutrum ultrices metus. Quisque faucibus mi sit amet odio maximus dictum. Quisque fermentum, justo ut congue euismod, nibh nisl molestie est, vitae gravida nibh ipsum eu ex. Proin malesuada est mi. Proin dictum ligula non sagittis congue. Cras varius justo at finibus fermentum. 
-                    </p>       
-                </div>
-                <div id="forum" class="page-item">
-                    <h1>Forum</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus congue molestie. Phasellus sagittis lorem sit amet nisl ornare ornare. Nunc placerat ex nec orci aliquam molestie. Nunc tempor sollicitudin metus sit amet pellentesque. Aliquam rhoncus vestibulum nibh sit amet rutrum. Aliquam id convallis magna. Sed nec mauris magna. In bibendum interdum nisi a interdum. Curabitur in diam a lorem vestibulum pulvinar ut at lorem. Cras in tortor magna. Nam tincidunt diam ac lacus sagittis, a dapibus magna mattis.
+                    </div>
+                    <div id="blogs" class="page-item">
+                        <h1>Блоги</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus congue molestie. Phasellus sagittis lorem sit amet nisl ornare ornare. Nunc placerat ex nec orci aliquam molestie. Nunc tempor sollicitudin metus sit amet pellentesque. Aliquam rhoncus vestibulum nibh sit amet rutrum. Aliquam id convallis magna. Sed nec mauris magna. In bibendum interdum nisi a interdum. Curabitur in diam a lorem vestibulum pulvinar ut at lorem. Cras in tortor magna. Nam tincidunt diam ac lacus sagittis, a dapibus magna mattis.
 
-                        Vivamus eget felis finibus, porttitor nisi a, sollicitudin justo. Morbi orci purus, ullamcorper sed metus sit amet, rutrum ultrices metus. Quisque faucibus mi sit amet odio maximus dictum. Quisque fermentum, justo ut congue euismod, nibh nisl molestie est, vitae gravida nibh ipsum eu ex. Proin malesuada est mi. Proin dictum ligula non sagittis congue. Cras varius justo at finibus fermentum. 
-                    </p>
+                            Vivamus eget felis finibus, porttitor nisi a, sollicitudin justo. Morbi orci purus, ullamcorper sed metus sit amet, rutrum ultrices metus. Quisque faucibus mi sit amet odio maximus dictum. Quisque fermentum, justo ut congue euismod, nibh nisl molestie est, vitae gravida nibh ipsum eu ex. Proin malesuada est mi. Proin dictum ligula non sagittis congue. Cras varius justo at finibus fermentum. 
+                        </p>       
+                    </div>
+                    <div id="forum" class="page-item">
+                        <h1>Форум</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus congue molestie. Phasellus sagittis lorem sit amet nisl ornare ornare. Nunc placerat ex nec orci aliquam molestie. Nunc tempor sollicitudin metus sit amet pellentesque. Aliquam rhoncus vestibulum nibh sit amet rutrum. Aliquam id convallis magna. Sed nec mauris magna. In bibendum interdum nisi a interdum. Curabitur in diam a lorem vestibulum pulvinar ut at lorem. Cras in tortor magna. Nam tincidunt diam ac lacus sagittis, a dapibus magna mattis.
+
+                            Vivamus eget felis finibus, porttitor nisi a, sollicitudin justo. Morbi orci purus, ullamcorper sed metus sit amet, rutrum ultrices metus. Quisque faucibus mi sit amet odio maximus dictum. Quisque fermentum, justo ut congue euismod, nibh nisl molestie est, vitae gravida nibh ipsum eu ex. Proin malesuada est mi. Proin dictum ligula non sagittis congue. Cras varius justo at finibus fermentum. 
+                        </p>
 
 
-                </div>
-                <div id="aboutUs" class="page-item">
-                    <h1>About Us</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus congue molestie. Phasellus sagittis lorem sit amet nisl ornare ornare. Nunc placerat ex nec orci aliquam molestie. Nunc tempor sollicitudin metus sit amet pellentesque. Aliquam rhoncus vestibulum nibh sit amet rutrum. Aliquam id convallis magna. Sed nec mauris magna. In bibendum interdum nisi a interdum. Curabitur in diam a lorem vestibulum pulvinar ut at lorem. Cras in tortor magna. Nam tincidunt diam ac lacus sagittis, a dapibus magna mattis.
+                    </div>
+                    <div id="aboutUs" class="page-item">
+                        <h1>О Нас</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus congue molestie. Phasellus sagittis lorem sit amet nisl ornare ornare. Nunc placerat ex nec orci aliquam molestie. Nunc tempor sollicitudin metus sit amet pellentesque. Aliquam rhoncus vestibulum nibh sit amet rutrum. Aliquam id convallis magna. Sed nec mauris magna. In bibendum interdum nisi a interdum. Curabitur in diam a lorem vestibulum pulvinar ut at lorem. Cras in tortor magna. Nam tincidunt diam ac lacus sagittis, a dapibus magna mattis.
 
-                        Vivamus eget felis finibus, porttitor nisi a, sollicitudin justo. Morbi orci purus, ullamcorper sed metus sit amet, rutrum ultrices metus. Quisque faucibus mi sit amet odio maximus dictum. Quisque fermentum, justo ut congue euismod, nibh nisl molestie est, vitae gravida nibh ipsum eu ex. Proin malesuada est mi. Proin dictum ligula non sagittis congue. Cras varius justo at finibus fermentum. 
-                    </p>
+                            Vivamus eget felis finibus, porttitor nisi a, sollicitudin justo. Morbi orci purus, ullamcorper sed metus sit amet, rutrum ultrices metus. Quisque faucibus mi sit amet odio maximus dictum. Quisque fermentum, justo ut congue euismod, nibh nisl molestie est, vitae gravida nibh ipsum eu ex. Proin malesuada est mi. Proin dictum ligula non sagittis congue. Cras varius justo at finibus fermentum. 
+                        </p>
 
-                </div>
+                    </div>
 
-            </div> <!-- content-wrapper END -->
+                </div><!-- content-wrapper END -->
+
+            </div> 
 
         
             <div id="footer-wrapper">
@@ -136,8 +142,10 @@
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+        
         <script src="js/vendor/jquery.easing.js"></script>
         <script src="js/vendor/jquery.scrollpath.js"></script>
+
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

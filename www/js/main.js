@@ -9,11 +9,15 @@ function init() {
 	//==================================
 	$.fn.scrollPath("getPath")
 
-		//Home (starting) Page
-		.moveTo(450, 200, {name:"home"})
+		
+		//x of the page point should be always vw / 2 - sidebar width (20vw)
 
+
+		//Home (starting) Page
+		.moveTo(576, 200, {name:"home"})
+		.lineTo(576, 800)
+		
 		//Move to Israel About
-		.lineTo(450, 800)
 		.lineTo(1100, 800, {name: "isr-about"})
 		.lineTo(2200,800)
 
@@ -44,13 +48,16 @@ function init() {
 		.lineTo(0,200)
 		.lineTo(457,200);		
 		
-	$("#content-wrapper").scrollPath({drawPath: true, wrapAround: true});
+	$("#content-wrapper").scrollPath({drawPath: true, wrapAround: true, scrollBar:false});
 
 	$(".settings .show-path-btn").click(function(e) {
 		e.preventDefault();
 		$(".sp-canvas").toggle();
 	});
 
+
+	// Disable page scrolling
+	
 
 	// Add scrollTo on click on the navigation anchors
 	$(".nav").find("a").each(function() {
