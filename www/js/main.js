@@ -3,15 +3,21 @@ $(document).ready(init);
 
 
 function init() {
+	//Variables
+	var $sidebar   = $(".sidebar_nav"), 
+        $window    = $(window),
+        offset     = $sidebar.offset(),
+        topPadding = 180;
 
-	//Scrolling
+	
 
 
+	//SITE PAGES NAVIGATION
 	$(".nav").find("a").each(function() {
 		var target = $(this).attr("href");
 		$(this).click(function(e) {
 	 		e.preventDefault();
-			
+			$('html,body').stop();
 			$('html, body').scrollTop($(".page-item").css("margin-top"));
 			$('html, body').animate({
 				scrollLeft: $(target).offset().left
@@ -20,6 +26,19 @@ function init() {
 	 	});
 	})
 	
+
+	//PAGE SCROLLING
+    $window.scroll(function() {
+        if ($window.scrollTop() > offset.top) {
+            $sidebar.stop().animate({
+                marginTop: $window.scrollTop() - offset.top + topPadding
+            });
+        } else {
+            $sidebar.stop().animate({
+                marginTop: 0
+            });
+        }
+    });
 
 	$('#cssmenu li.has-sub>a').on('click', function(){
 		$(this).removeAttr('href');
