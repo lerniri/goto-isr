@@ -20,12 +20,14 @@ $(document).ready(init);
 
 
 function init() {
+
 	//Variables
 	var $sidebar      = $(".sidebar_nav"), 
         $window    	  = $(window),
-        offset     = $sidebar.offset(),
-        topPadding = 180,
-        $site_nav 	  = $("#site_nav");
+        offset     	  = $sidebar.offset(),
+        topPadding 	  = 180,
+        $site_nav 	  = $("#site_nav"),
+        rightPadding  = 25;
         
 
 	//SITE PAGES NAVIGATION
@@ -39,24 +41,10 @@ function init() {
 				scrollLeft: $(target).offset().left
 			}, 2500, "easeInOutSine");
 
-			$('#site_nav').css("right", -1*$(target).offset().left + "px");
+			$site_nav.css("right", -1*$(target).offset().left + rightPadding + "px");
 	 	});
 
 	})
-
-	//Temporary solution for debugging purposes 
-	// $(".nav").find("a").each(function() {
-	// 	var target = $(this).attr("href");
-	// 	$(this).click(function(e) {
-	//  		e.preventDefault();
-	// 		$('html,body').stop();
-	// 		$('html, body').scrollTop($(".page-item").css("margin-top"));
-	// 		$('html, body').animate({
-	// 			scrollLeft: $(target).offset().left
-	// 		}, 2500, "easeInOutSine");
-	//  	});
-	// })
-	
 
 	//PAGE SCROLLING
     $window.scroll(function() {
@@ -74,6 +62,8 @@ function init() {
            
         }
     });
+
+    //PAGES MENU
 
 	$('#cssmenu li.has-sub>a').on('click', function(){
 		$(this).removeAttr('href');
