@@ -13,7 +13,11 @@ html, body {
 
 #page-wrapper {
   width: $page_wrapper_width;
-  color: $font-color;  
+  background-color: $background-color;
+  color: $font_color;  
+  h1,h2,h3,h4,h5,h6 {
+  	color: $h_font_color;
+  }
 }
 
 
@@ -42,7 +46,7 @@ html, body {
 			float:left;
 		}
 		.logo {
-			color: $header-font-color;
+			// color: $header-font-color;
 		}
 	}
 	.nav {
@@ -72,10 +76,109 @@ html, body {
 	}
 }
 
+//========================
+// SITE NAVIGATION
+//========================
+#site_nav {
+	position: absolute;
+	bottom:0;
+	right:25px;
+	width:200px;
+	z-index: 1111;
+
+	ul {
+		padding: 50px 0 0 0;
+		list-style-type: none;
+			
+		height:400px;
+		background: url('../img/menu/stick.png') center no-repeat;
+		background-size: contain;
+
+		a {
+			text-decoration: none;
+			color:black;
+			display: block;
+			position: relative;
+		
+
+		}
+		li {
+			position: relative;
+			height:60px;
+			text-align: center;
+
+			&:nth-child(1) {
+				background: transparent url('../img/menu/menu_item_home.png') no-repeat;
+				top:10px;
+				a {
+					top: 13px;
+					left: -5px;
+					transform: rotate(7deg);
+				}
+			}
+			&:nth-child(2) {
+				background: transparent url('../img/menu/menu_item_isr_about.png') no-repeat;
+				left:15px;
+				top:-10px;
+				a {
+					transform: rotate(-11deg);
+					top: 16px;
+					left: -15px;
+				}
+			}
+			&:nth-child(3) {
+				background: transparent url('../img/menu/menu_item_imm.png') no-repeat;
+				left:10px;
+				top:-10px;
+				a {
+					top: 8px;
+					left: -9px;
+				}
+			}
+			&:nth-child(4) {
+				background: transparent url('../img/menu/menu_item_blog.png') no-repeat;
+				left:14px;
+				top:-18px;
+				a {
+					top: 13px;
+					transform: rotate(5deg);
+					left: -15px;
+				}
+			}
+			&:nth-child(5) {
+				background: transparent url('../img/menu/menu_item_forum.png') no-repeat;
+				left:17px;
+				top:-25px;
+				a {
+					top: 8px;
+					transform: rotate(-4deg);
+					left: -23px;
+				}
+			}
+			&:nth-child(6) {
+				background: transparent url('../img/menu/menu_item_we.png') no-repeat;
+				left:15px;
+				top:-30px;
+				a {
+					left: -13px;
+					top: 3px;
+				}
+			}	
+
+		}
+
+			
+	
+	}
+}
+
+
+
+
+
 //======================== 
 //   CONTENT                    
 //========================
-
 
 #content-wrapper {
 	position: relative;
@@ -96,7 +199,8 @@ html, body {
   			margin-left: .5%;
   			margin-right: 2%;
   			height:100%;
-  			float:left; 				
+  			float:left; 
+  			
 		}
 
 		.content_div {
@@ -124,33 +228,5 @@ html, body {
 }
 
 
-
-	// #isr-about {
-	// 	top:600px;
-	// 	left:750px;
-	// }
-
-	// #isr-imm {
-	// 	top:1600px;
-	// 	left:2000px;
-	// }
-
-	// #blogs {
-	// 	left:2800px;
-	// 	top: 2800px;
-	// }
-
-	// #forum {
-	// 	top: 2000px;
-	// 	left:550px;
-	// }
-
-	// #aboutUs {
-	// 	top:1300px;
-	// 	left:-400px;
-	// }
-
-
- /*page item positioning*/
 
 

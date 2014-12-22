@@ -1,19 +1,35 @@
 $(document).ready(init);
 
+	var pageNav = {
+		//properties 
+		//methods
+
+		menuclick: function() {
+			alert('hi');
+
+		},
+
+		init: function() {
+
+			console.log("Initiating page navigation.... ");
+
+		    console.log("Finished page navigation initialisation...");
+		}
+
+}
 
 
 function init() {
 	//Variables
-	var $sidebar   = $(".sidebar_nav"), 
-        $window    = $(window),
+	var $sidebar      = $(".sidebar_nav"), 
+        $window    	  = $(window),
         offset     = $sidebar.offset(),
-        topPadding = 180;
-
-	
-
+        topPadding = 180,
+        $site_nav 	  = $("#site_nav");
+        
 
 	//SITE PAGES NAVIGATION
-	$(".nav").find("a").each(function() {
+	$("#site_nav").find("a").each(function() {
 		var target = $(this).attr("href");
 		$(this).click(function(e) {
 	 		e.preventDefault();
@@ -21,10 +37,25 @@ function init() {
 			$('html, body').scrollTop($(".page-item").css("margin-top"));
 			$('html, body').animate({
 				scrollLeft: $(target).offset().left
-			}, 2500, "easeInOutSine")	;
+			}, 2500, "easeInOutSine");
 
+			$('#site_nav').css("right", -1*$(target).offset().left + "px");
 	 	});
+
 	})
+
+	//Temporary solution for debugging purposes 
+	// $(".nav").find("a").each(function() {
+	// 	var target = $(this).attr("href");
+	// 	$(this).click(function(e) {
+	//  		e.preventDefault();
+	// 		$('html,body').stop();
+	// 		$('html, body').scrollTop($(".page-item").css("margin-top"));
+	// 		$('html, body').animate({
+	// 			scrollLeft: $(target).offset().left
+	// 		}, 2500, "easeInOutSine");
+	//  	});
+	// })
 	
 
 	//PAGE SCROLLING
@@ -33,10 +64,14 @@ function init() {
             $sidebar.stop().animate({
                 marginTop: $window.scrollTop() - offset.top + topPadding
             });
+
+
         } else {
             $sidebar.stop().animate({
                 marginTop: 0
             });
+
+           
         }
     });
 
@@ -58,4 +93,8 @@ function init() {
 		}
 	});
 
+
+	$('#signpost_obj').load(pageNav.init());
+
 }
+
