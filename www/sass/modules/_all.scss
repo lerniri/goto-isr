@@ -3,14 +3,24 @@
 //   GENERAL                    
 //========================
 html, body {
-  width: 100%;
-  height: 100%; 
+  width: $page_wrapper_width;
+  @include page_back_gradient;
+  
+  background-repeat: no-repeat;
+  
+
 }
 
 
 #page-wrapper {
   width: $page_wrapper_width;
-  background-color: $background-color;
+  height:100vh;
+
+  
+  background: url('../img/page_background.png') left bottom no-repeat; 
+
+
+  
   color: $font_color;  
   h1,h2,h3,h4,h5,h6 {
   	color: $h_font_color;
@@ -87,9 +97,10 @@ html, body {
 		padding: 50px 0 0 0;
 		list-style-type: none;
 			
-		height:400px;
+		height:500px;
 		background: url('../img/menu/stick.png') center no-repeat;
 		background-size: contain;
+
 
 		a {
 			text-decoration: none;
@@ -105,10 +116,18 @@ html, body {
 			height:70px;
 			text-align: center;
 
+			a {
+				font-weight: bold;
+				color:#FF8500;
+			}
+			
+
+
 			&:nth-child(1) {
 				background: transparent url('../img/menu/menu_item_home.png') center no-repeat;
+				background-size:contain;
 				z-index: 1010;
-
+				top:-21px;
 				
 				a {
 					top: 19px;
@@ -128,9 +147,10 @@ html, body {
 			&:nth-child(2) {
 				background: transparent url('../img/menu/menu_item_isr_about.png') center no-repeat;
 				z-index: 1009;
+					background-size:contain;
 
 				left: 7px;
-				top: -28px;
+				top: -18px;
 				a {
 					top: 21px;
 					left: -9px;
@@ -144,9 +164,10 @@ html, body {
 			}
 			&:nth-child(3) {
 				background: transparent url('../img/menu/menu_item_imm.png') center no-repeat;
+					background-size:contain;
 				z-index: 1008;
 				left: 10px;
-				top: -50px;
+				top: -16px;
 				a {
 					top: 18px;
 					left: -9px;
@@ -158,9 +179,10 @@ html, body {
 			}
 			&:nth-child(4) {
 				background: transparent url('../img/menu/menu_item_blog.png')  center no-repeat;
+					background-size:contain;
 				z-index: 1007;
 				left: 14px;
-				top: -56px;
+				top: -24px;
 				a {
 					top: 20px;
 					transform: rotate(5deg);
@@ -172,9 +194,10 @@ html, body {
 			}
 			&:nth-child(5) {
 				background: transparent url('../img/menu/menu_item_forum.png') center no-repeat;
+					background-size:contain;
 				z-index: 1006;
 				left: 5px;
-				top: -75px;
+				top: -28px;
 				transform: rotate(7deg);
 				a {
 					top: 21px;
@@ -187,9 +210,10 @@ html, body {
 			}
 			&:nth-child(6) {
 				background: transparent url('../img/menu/menu_item_we.png') center no-repeat;
+					background-size:contain;
 				z-index: 1005;
 				left: 14px;
-				top: -71px;
+				top: -18px;
 				a {
 					left: -13px;
 					top: 23px;
@@ -228,8 +252,6 @@ html, body {
 	 	width: 88vw;
 	 	height:100%;
 
-	 
-	  	
 	  	.sidebar_nav {
 
   			margin-left: .5%;
@@ -247,7 +269,7 @@ html, body {
 	.animation_div {
 		
 		//margin-top:180px;
-		width: 2222px;
+		width: 2800px;
 		height:100vh;
 		position: relative;
 
@@ -257,18 +279,21 @@ html, body {
 			height:80%;
 		}
 
-		.down {
-			background-color: orange;
-			height:100%;
-		}
+		// .down {
+		// 	background-color:  #FCB924;
+		// 	height:100%;
+		// }
 
 		.animation_content {
 			position: absolute;
 			top:0;
 			width:inherit;
 			height:inherit;
-			background: url('../img/desert_animation_1.png') bottom no-repeat;
-	
+			//background: url('../img/animation_1_background.png')  no-repeat;
+
+			
+
+
 		}
 		span {
 			margin-top: 500px;
