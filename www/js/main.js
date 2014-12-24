@@ -9,9 +9,79 @@ $(document).ready(init);
 
 		},
 
+
+		sign_dir: function() {
+			//Redraw signs direction according to post position
+			var signDir = [],
+				$page_item = $('.page-item'),
+				signOffset = $('#site_nav').offset().left;
+
+			for (i=0;i<$page_item.length -1 ; i++) {
+				var dir = 1;
+				var pid = $page_item[i].id;
+				var poffset = $page_item[i].offsetLeft;
+				
+				//check sign post position with pages offset position
+				if (signOffset > poffset) {
+					
+					rotateSign(-1,$("#site_nav li[name="+pid+"]"));
+					 }
+				else {
+					rotateSign(1,$("#site_nav li[name="+pid+"]"));
+				};
+
+
+				//if sign post pos > page pos then sign dir = left
+				//if sign post pos < page pos then sign dir = right 
+
+				signDir[pid] = dir;
+			}
+
+			function rotateSign(dir,sign) {
+				//Create class .rotated  
+					// sign and text rotated 180 verticaly
+					if (dir != sign.attr("data-dir")) {
+						sign.toggleClass('rotate');
+						sign.attr("data-dir",dir);
+					};
+ 
+
+			}
+
+				
+			//get current position of a sign post
+			
+			
+
+
+
+		},
+
+		navigate: function(e) {
+
+			var $site_nav 	  = $("#site_nav"),
+        		rightPadding  = 25,
+        		target 		  = $(this).attr("href");
+
+			e.preventDefault();
+			$('html,body').stop();
+			$('html, body').scrollTop($(".page-item").css("margin-top"));
+			$('html, body').animate({
+					scrollLeft: $(target).offset().left
+			}, 2500, "easeInOutSine");
+			$site_nav.css("right", -1*$(target).offset().left + rightPadding + "px");
+
+			pageNav.sign_dir();
+			
+		},
+
 		init: function() {
 
 			console.log("Initiating page navigation.... ");
+
+
+			$('#site_nav').find('a').bind('click',pageNav.navigate);
+
 
 		    console.log("Finished page navigation initialisation...");
 		}
@@ -25,26 +95,7 @@ function init() {
 	var $sidebar      = $(".sidebar_nav"), 
         $window    	  = $(window),
         offset     	  = $sidebar.offset(),
-        topPadding 	  = 180,
-        $site_nav 	  = $("#site_nav"),
-        rightPadding  = 25;
-        
-
-	//SITE PAGES NAVIGATION
-	$("#site_nav").find("a").each(function() {
-		var target = $(this).attr("href");
-		$(this).click(function(e) {
-	 		e.preventDefault();
-			$('html,body').stop();
-			$('html, body').scrollTop($(".page-item").css("margin-top"));
-			$('html, body').animate({
-				scrollLeft: $(target).offset().left
-			}, 2500, "easeInOutSine");
-
-			$site_nav.css("right", -1*$(target).offset().left + rightPadding + "px");
-	 	});
-
-	})
+        topPadding 	  = 180;
 
 	//PAGE SCROLLING
     $window.scroll(function() {

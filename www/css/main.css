@@ -1066,158 +1066,112 @@ nav a:hover {
 /* line 5, ../sass/modules/_all.scss */
 html, body {
   width: 124000px;
-  background: #add8e6;
-  /* Old browsers */
-  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2FkZDhlNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjcwJSIgc3RvcC1jb2xvcj0iI2FkZDhlNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjcwJSIgc3RvcC1jb2xvcj0iIzI5ODlkOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjcwJSIgc3RvcC1jb2xvcj0iI2FkZDhlNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjcwJSIgc3RvcC1jb2xvcj0iI2FkZDhlNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjcxJSIgc3RvcC1jb2xvcj0iI2Y5YjgxMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmOWI4MTMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  background: -moz-linear-gradient(top, #add8e6 0%, #add8e6 70%, #2989d8 70%, #add8e6 70%, #add8e6 70%, #f9b813 71%, #f9b813 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #add8e6), color-stop(70%, #add8e6), color-stop(70%, #2989d8), color-stop(70%, #add8e6), color-stop(70%, #add8e6), color-stop(71%, #f9b813), color-stop(100%, #f9b813));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #add8e6 0%, #add8e6 70%, #2989d8 70%, #add8e6 70%, #add8e6 70%, #f9b813 71%, #f9b813 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #add8e6 0%, #add8e6 70%, #2989d8 70%, #add8e6 70%, #add8e6 70%, #f9b813 71%, #f9b813 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #add8e6 0%, #add8e6 70%, #2989d8 70%, #add8e6 70%, #add8e6 70%, #f9b813 71%, #f9b813 100%);
-  /* IE10+ */
-  background: linear-gradient(to bottom, #add8e6 0%, #add8e6 70%, #2989d8 70%, #add8e6 70%, #add8e6 70%, #f9b813 71%, #f9b813 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#add8e6', endColorstr='#f9b813',GradientType=0 );
-  /* IE6-8 */
-  background-repeat: no-repeat; }
+  background: #f9b813; }
 
-/* line 15, ../sass/modules/_all.scss */
+/* line 10, ../sass/modules/_all.scss */
+.page-background {
+  width: 124000px;
+  height: 100%;
+  position: absolute; }
+  /* line 14, ../sass/modules/_all.scss */
+  .page-background .sky {
+    position: absolute;
+    background-color: #add8e6;
+    height: 80vh;
+    width: 100%; }
+  /* line 20, ../sass/modules/_all.scss */
+  .page-background .desert {
+    background: url("../img/page_background.png") left bottom no-repeat;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px); }
+
+/* line 39, ../sass/modules/_all.scss */
 #page-wrapper {
   width: 124000px;
   height: 100vh;
-  background: url("../img/page_background.png") left bottom no-repeat;
   color: #475556; }
-  /* line 25, ../sass/modules/_all.scss */
+  /* line 44, ../sass/modules/_all.scss */
   #page-wrapper h1, #page-wrapper h2, #page-wrapper h3, #page-wrapper h4, #page-wrapper h5, #page-wrapper h6 {
     color: #382724; }
 
-/* line 35, ../sass/modules/_all.scss */
-#page-header {
-  position: fixed;
-  width: 100%;
-  height: 120px;
-  z-index: 1000;
-  background-color: white;
-  -webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.71);
-  -moz-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.71);
-  box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.71); }
-  /* line 48, ../sass/modules/_all.scss */
-  #page-header header {
-    position: relative;
-    top: 5px;
-    left: 5%; }
-    /* line 52, ../sass/modules/_all.scss */
-    #page-header header div {
-      float: left; }
-  /* line 59, ../sass/modules/_all.scss */
-  #page-header .nav {
-    margin-top: 8px; }
-    /* line 61, ../sass/modules/_all.scss */
-    #page-header .nav ul {
-      list-style-type: none; }
-      /* line 63, ../sass/modules/_all.scss */
-      #page-header .nav ul li {
-        display: inline-block; }
-    /* line 68, ../sass/modules/_all.scss */
-    #page-header .nav a {
-      text-decoration: none;
-      font-size: .7em;
-      padding: 7px;
-      color: white;
-      background-color: black; }
-      /* line 74, ../sass/modules/_all.scss */
-      #page-header .nav a:hover {
-        color: black;
-        background-color: white;
-        border: 1px solid grey; }
-  /* line 81, ../sass/modules/_all.scss */
-  #page-header .settings {
-    margin-top: 8px; }
-
-/* line 89, ../sass/modules/_all.scss */
+/* line 107, ../sass/modules/_all.scss */
 #site_nav {
   position: absolute;
   bottom: 0;
   right: 30px;
   width: 200px;
   z-index: 1000; }
-  /* line 96, ../sass/modules/_all.scss */
+  /* line 114, ../sass/modules/_all.scss */
   #site_nav ul {
     padding: 50px 0 0 0;
+    margin-top: 0;
+    margin-bottom: 0;
     list-style-type: none;
     height: 500px;
     background: url("../img/menu/stick.png") center no-repeat;
     background-size: contain; }
-    /* line 105, ../sass/modules/_all.scss */
-    #site_nav ul a {
-      text-decoration: none;
-      color: black;
-      position: relative; }
-    /* line 113, ../sass/modules/_all.scss */
+    /* line 125, ../sass/modules/_all.scss */
     #site_nav ul li {
       position: relative;
       height: 70px;
       text-align: center; }
-      /* line 119, ../sass/modules/_all.scss */
+      /* line 131, ../sass/modules/_all.scss */
       #site_nav ul li a {
+        text-decoration: none;
+        position: relative;
         font-weight: bold;
-        color: #FF8500; }
-      /* line 126, ../sass/modules/_all.scss */
+        display: block;
+        color: #222; }
+      /* line 141, ../sass/modules/_all.scss */
       #site_nav ul li:nth-child(1) {
         background: transparent url("../img/menu/menu_item_home.png") center no-repeat;
         background-size: contain;
         z-index: 1010;
         top: -21px; }
-        /* line 132, ../sass/modules/_all.scss */
+        /* line 147, ../sass/modules/_all.scss */
         #site_nav ul li:nth-child(1) a {
           top: 19px;
-          left: -5px;
-          transform: rotate(2deg); }
-        /* line 140, ../sass/modules/_all.scss */
-        #site_nav ul li:nth-child(1):hover {
-          -webkit-animation: swing .5s;
-          animation: swing .5s; }
-      /* line 147, ../sass/modules/_all.scss */
+          left: -5px; }
+      /* line 161, ../sass/modules/_all.scss */
       #site_nav ul li:nth-child(2) {
         background: transparent url("../img/menu/menu_item_isr_about.png") center no-repeat;
         z-index: 1009;
         background-size: contain;
         left: 7px;
         top: -18px; }
-        /* line 154, ../sass/modules/_all.scss */
+        /* line 168, ../sass/modules/_all.scss */
         #site_nav ul li:nth-child(2) a {
           top: 21px;
-          left: -9px;
-          transform: rotate(-8deg); }
-      /* line 165, ../sass/modules/_all.scss */
+          left: -9px; }
+      /* line 179, ../sass/modules/_all.scss */
       #site_nav ul li:nth-child(3) {
         background: transparent url("../img/menu/menu_item_imm.png") center no-repeat;
         background-size: contain;
         z-index: 1008;
         left: 10px;
         top: -16px; }
-        /* line 171, ../sass/modules/_all.scss */
+        /* line 185, ../sass/modules/_all.scss */
         #site_nav ul li:nth-child(3) a {
           top: 18px;
           left: -9px; }
-      /* line 180, ../sass/modules/_all.scss */
+      /* line 194, ../sass/modules/_all.scss */
       #site_nav ul li:nth-child(4) {
         background: transparent url("../img/menu/menu_item_blog.png") center no-repeat;
         background-size: contain;
         z-index: 1007;
         left: 14px;
         top: -24px; }
-        /* line 186, ../sass/modules/_all.scss */
+        /* line 200, ../sass/modules/_all.scss */
         #site_nav ul li:nth-child(4) a {
           top: 20px;
-          transform: rotate(5deg);
           left: -15px; }
-      /* line 195, ../sass/modules/_all.scss */
+      /* line 209, ../sass/modules/_all.scss */
       #site_nav ul li:nth-child(5) {
         background: transparent url("../img/menu/menu_item_forum.png") center no-repeat;
         background-size: contain;
@@ -1225,64 +1179,70 @@ html, body {
         left: 5px;
         top: -28px;
         transform: rotate(7deg); }
-        /* line 202, ../sass/modules/_all.scss */
+        /* line 216, ../sass/modules/_all.scss */
         #site_nav ul li:nth-child(5) a {
           top: 21px;
-          transform: rotate(3deg);
           left: -11px; }
-      /* line 211, ../sass/modules/_all.scss */
+      /* line 225, ../sass/modules/_all.scss */
       #site_nav ul li:nth-child(6) {
         background: transparent url("../img/menu/menu_item_we.png") center no-repeat;
         background-size: contain;
         z-index: 1005;
         left: 14px;
         top: -18px; }
-        /* line 217, ../sass/modules/_all.scss */
+        /* line 231, ../sass/modules/_all.scss */
         #site_nav ul li:nth-child(6) a {
           left: -13px;
           top: 23px; }
-        /* line 221, ../sass/modules/_all.scss */
+        /* line 235, ../sass/modules/_all.scss */
         #site_nav ul li:nth-child(6):hover {
           -webkit-animation: hinge .5s;
           animation: hinge .5s; }
+      /* line 242, ../sass/modules/_all.scss */
+      #site_nav ul li.rotate {
+        transform: rotate(180deg); }
+        /* line 246, ../sass/modules/_all.scss */
+        #site_nav ul li.rotate a {
+          transform: rotate(180deg); }
 
-/* line 243, ../sass/modules/_all.scss */
+/* line 268, ../sass/modules/_all.scss */
 #content-wrapper {
   position: relative; }
-  /* line 246, ../sass/modules/_all.scss */
+  /* line 271, ../sass/modules/_all.scss */
   #content-wrapper > div {
     float: left; }
-  /* line 249, ../sass/modules/_all.scss */
+  /* line 274, ../sass/modules/_all.scss */
   #content-wrapper .page-item {
     margin-top: 100px;
     margin-right: 12vw;
+    z-index: 3;
     width: 88vw;
-    height: 100%; }
-    /* line 255, ../sass/modules/_all.scss */
+    min-height: 100vh; }
+    /* line 281, ../sass/modules/_all.scss */
     #content-wrapper .page-item .sidebar_nav {
       margin-left: .5%;
       margin-right: 2%;
       height: 100%;
       float: left; }
-    /* line 264, ../sass/modules/_all.scss */
+    /* line 290, ../sass/modules/_all.scss */
     #content-wrapper .page-item .content_div {
       overflow: hidden; }
-  /* line 269, ../sass/modules/_all.scss */
+  /* line 295, ../sass/modules/_all.scss */
   #content-wrapper .animation_div {
     width: 2800px;
     height: 100vh;
     position: relative; }
-    /* line 277, ../sass/modules/_all.scss */
+    /* line 303, ../sass/modules/_all.scss */
     #content-wrapper .animation_div .up {
       background-color: lightblue;
       height: 80%; }
-    /* line 287, ../sass/modules/_all.scss */
+    /* line 313, ../sass/modules/_all.scss */
     #content-wrapper .animation_div .animation_content {
       position: absolute;
       top: 0;
       width: inherit;
       height: inherit; }
-    /* line 298, ../sass/modules/_all.scss */
+    /* line 324, ../sass/modules/_all.scss */
     #content-wrapper .animation_div span {
       margin-top: 500px;
       display: block;
