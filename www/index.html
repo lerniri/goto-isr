@@ -11,9 +11,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <link rel="stylesheet" href="css/main.css">
-    <!--link rel="stylesheet" href="css/main_sass.css"-->
-    <!-- script src="js/vendor/jquery.mousewheel.min.js"></script-->
-    <!-- script type="text/javascript" src="js/vendor/prefixfree.min.js"></script-->
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
 <body>
@@ -22,14 +19,17 @@
     <![endif]-->
 
     <div id="page-wrapper" class="clearfix">
-        <div class="page-background"><div class="sky"></div><div class='desert'></div></div>
+        
+        <div class="page-background blur"><div class="sky"></div><div class='desert'></div></div>
+        <div class="character">
+            <div class="man"></div>
+            <!-- <div class="animated_box">
+                <h3>Animated Box</h3>    
+            </div> -->
+        </div>
+
+
         <div id="site_nav">
-            <!-- <object id="signpost_obj" data="img/signpost.svg" type="image/svg+xml">
-            </object> -->
-
-            <!-- SVG IMAGE --> 
-            <!-- SVG IMAGE END -->
-
             <ul>
                 <li data-dir="1" name="home"><a href="#home">Начало</a></li>
                 <li data-dir="1" name="isr-about"><a href="#isr-about">Об Израиле</a></li>
@@ -38,34 +38,9 @@
                 <li data-dir="1" name="forum"><a href="#forum">Форум</a></li>
                 <li data-dir="1" name="aboutUs"><a href="#aboutUs">О Нас</a></li>
             </ul>
-
         </div>
 
- <!--        <div id="page-header">
-            <header class="clearfix">
-                <div class="logo">
-                    <h1>GOTO ISRAEL - Mockup</h1> 
-                </div>
-                <div class="nav">
-                    <ul>
-                        <li><a href="#home">Начало</a></li>
-                        <li><a href="#isr-about">Об Израиле</a></li>
-                        <li><a href="#isr-imm">Иммиграция</a></li>
-                        <li><a href="#blogs">Блог</a></li>
-                        <li><a href="#forum">Форум</a></li>
-                        <li><a href="#aboutUs">О Нас</a></li>
-                        <li><a href="#news">Новости</a></li>
-                    </ul>
-                   
-                </div>                                  
-            </header>
-        </div> -->
-         <!-- page-header END -->
-    
-                   
         <div id="content-wrapper" class="clearfix">
-
-            
 
             <div id="home" class="page-item clearfix">
                 <div class="sidebar_nav">
@@ -359,7 +334,7 @@
     
     <script src="js/vendor/jquery.easing.js"></script>
     <script src="js/vendor/jquery.scrollpath.js"></script>
-    <script src="js/vendor/svg.min.js"></script>
+    <!--script src="js/vendor/svg.min.js"></script-->
 
 
     <script src="js/main.js"></script>
